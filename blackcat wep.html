@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القط الأسود</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f5f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #6cb2eb;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main .hero {
+            background-color: white;
+            padding: 30px;
+            margin: 30px auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        main .hero h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #6cb2eb;
+        }
+
+        .special-offers {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #6cb2eb;
+            background-color: #e2f0fc;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background-color: #6cb2eb;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #599dd4;
+        }
+
+        .products-section {
+            background-color: #f9fbfd;
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .products-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #6cb2eb;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .product-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .news-section {
+            background-color: #f9fbfd;
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .news-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #6cb2eb;
+        }
+
+        .news-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .news-item img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .testimonial {
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff3e0;
+            border-left: 5px solid #ffab40;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+
+        .testimonial p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            margin-top: 5px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .policy {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .policy a {
+            color: #6cb2eb;
+            text-decoration: none;
+        }
+
+        .policy a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6cb2eb;
+            color: white;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>القط الأسود</h1>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">المنتجات</a>
+            <a href="#">تسجيل الدخول</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" data-aos="fade-up">
+            <h2>بيع وشراء الملفات القابلة للبيع</h2>
+            <div class="special-offers">احصل على خصم 20% على أول عملية شراء!</div>
+            <button onclick="loginWithGoogle()">تسجيل الدخول بواسطة Google</button>
+            <button onclick="loginWithFacebook()">تسجيل الدخول بواسطة Facebook</button>
+            <button onclick="loginWithEmail()">تسجيل الدخول بواسطة البريد الإلكتروني</button>
+        </section>
+        <section class="products-section" data-aos="fade-up">
+            <h3>الملفات القابلة للبيع</h3>
+            <div class="product-item">
+                <img src="cat-thumbnail.jpg" alt="القط الأسود">
+                <div>ملف القطة السوداء - 10 دولار</div>
+            </div>
+            <div class="product-item">
+                <img src="cat-thumbnail.jpg" alt="القط الأسود">
+                <div>ملف الصور الرائعة - 15 دولار</div>
+            </div>
+        </section>
+        <section class="news-section" data-aos="fade-up">
+            <h3>أخبار لطيفة عن القطط</h3>
+            <div class="news-item">
+                <img id="cat-image" src="" alt="قطة">
+                <div id="cat-story"></div>
+            </div>
+        </section>
+        <section class="testimonial" data-aos="fade-up">
+            <p>"موقع القط الأسود هو أفضل مكان للحصول على ملفات ذات جودة عالية بسرعة وسهولة. أحببت الخدمة والدعم!"</p>
+            <div class="testimonial-author">- أحمد</div>
+        </section>
+        <section class="policy" data-aos="fade-up">
+            <a href="#">سياسة الخصوصية</a> | <a href="#">شروط الاستخدام</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 القط الأسود. جميع الحقوق محفوظة.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const catStories = [
+            { 
+                img: 'cat1.jpg', 
+                story: 'القطة "أمل" تُنقذ عائلتها من حريق بإبلاغهم بالمخاطر.' 
+            },
+            { 
+                img: 'cat2.jpg', 
+                story: 'القطة "علمان" تعلم الأطفال العلوم الأساسية من خلال تجارب بسيطة.' 
+            },
+            { 
+                img: 'cat3.jpg', 
+                story: 'القطة "دكتورة" تساعد الأطفال على التعامل مع الخوف من الطبيب.' 
+            },
+            { 
+                img: 'cat4.jpg', 
+                story: 'القطة "رياضة" تشجع الأطفال على ممارسة الرياضة والاهتمام بالصحة.' 
+            },
+            { 
+                img: 'cat5.jpg', 
+                story: 'القطة "فنانة" تعلم الأطفال الفن والإبداع من خلال رسوماتها الجميلة.' 
+            }
+        ];
+
+        function displayRandomCatStory() {
+            const randomIndex = Math.floor(Math.random() * catStories.length);
+            const catImageElement = document.getElementById('cat-image');
+            const catStoryElement = document.getElementById('cat-story');
+
+            catImageElement.src = catStories[randomIndex].img;
+            catStoryElement.innerText = catStories[randomIndex].story;
+        }
+
+        window.onload = displayRandomCatStory;
+    </script>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElements
